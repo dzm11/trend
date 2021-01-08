@@ -220,8 +220,10 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	margin-bottom: 40px;
 	.more__left {
+		display: flex;
+		flex-direction: column;
 		text-align: center;
 		width: 50%;
 		h2 {
@@ -244,8 +246,10 @@ section {
 	}
 	.more__right {
 		display: flex;
+
 		width: 50%;
 		img {
+			align-self: center;
 			width: 100%;
 		}
 	}
