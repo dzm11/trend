@@ -19,7 +19,7 @@ body {
   background-image: url(./images/LP_odm_live_3_tlo_1920.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  background-size: cover;
+  background-size: contain;
 }
 
 .container {
@@ -389,6 +389,12 @@ section {
   width: 100%;
 }
 
+@media (max-width: 1705px) {
+  body {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1000px) {
   .container {
     max-width: 1200px;
@@ -428,6 +434,92 @@ section {
   }
   .hero .hero__left .hero__left--social img {
     margin: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content .content__bullets {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    list-style-position: inside;
+  }
+  .content .content__bullets .half {
+    width: 100%;
+  }
+  .content .content__bullets .half:nth-child(2) {
+    padding-left: 0px;
+  }
+  .experts .experts__header {
+    margin-bottom: 30px;
+  }
+  .experts .experts__themselves {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .experts .experts__themselves .experts__themselves--osoba {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .more {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .more .more__left {
+    width: 100%;
+  }
+  .more .more__right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 535px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .container {
+    padding: 0 10px;
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  .hero .hero__left {
+    padding-right: 0px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

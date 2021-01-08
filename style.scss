@@ -16,7 +16,7 @@ body {
 	background-image: url(./images/LP_odm_live_3_tlo_1920.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 0%;
-	background-size: cover;
+	background-size: contain;
 }
 .container {
 	display: flex;
@@ -250,7 +250,11 @@ section {
 		}
 	}
 }
-
+@media (max-width: 1705px) {
+	body {
+		background-size: cover;
+	}
+}
 @media (max-width: 1000px) {
 	.container {
 		max-width: 1200px;
@@ -301,5 +305,67 @@ section {
 		}
 	}
 }
-@media (max-width: 790px) {
+@media (max-width: 700px) {
+	.hero {
+		flex-direction: column;
+	}
+
+	.content {
+		justify-content: center;
+		.content__bullets {
+			flex-direction: column;
+			text-align: center;
+			list-style-position: inside;
+			.half {
+				width: 100%;
+			}
+			.half:nth-child(2) {
+				padding-left: 0px;
+			}
+		}
+	}
+	.experts {
+		.experts__header {
+			margin-bottom: 30px;
+		}
+		.experts__themselves {
+			flex-direction: column;
+			align-items: center;
+			.experts__themselves--osoba {
+				margin-bottom: 30px;
+				width: 100%;
+			}
+		}
+	}
+	.more {
+		flex-direction: column;
+		.more__left {
+			width: 100%;
+		}
+		.more__right {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 535px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+	}
+	.container {
+		padding: 0 10px;
+		width: 100%;
+	}
+	section {
+		width: 100%;
+	}
+	.hero {
+		.hero__left {
+			padding-right: 0px;
+			width: 100%;
+		}
+	}
 }
